@@ -1,0 +1,316 @@
+Prompts: 30  |  max_new_tokens=200  |  temperature=1.0  |  device=mps  |  running: ['GPT-2', 'Llama-3.2-1B', 'Qwen2.5-1.5B']
+
+=== GPT-2 (gpt2) — vocab=50257, device=mps ===
+[ 1/30] sta1   4.8s  synthid   2.8s  STA1 z=10.78  SynthID z=8.38  (baseline STA1=-1.28, SynthID=0.35)
+[ 2/30] sta1   2.5s  synthid   2.1s  STA1 z=13.68  SynthID z=7.91  (baseline STA1=-1.85, SynthID=0.16)
+[ 3/30] sta1   2.6s  synthid   2.2s  STA1 z=13.40  SynthID z=8.30  (baseline STA1=1.06, SynthID=0.56)
+[ 4/30] sta1   2.7s  synthid   2.2s  STA1 z=12.97  SynthID z=8.17  (baseline STA1=-0.92, SynthID=0.09)
+[ 5/30] sta1   2.8s  synthid   2.3s  STA1 z=12.55  SynthID z=7.59  (baseline STA1=0.28, SynthID=0.30)
+[ 6/30] sta1   1.4s  synthid   2.2s  STA1 z=10.03  SynthID z=8.55  (baseline STA1=-1.35, SynthID=0.13)
+[ 7/30] sta1   1.4s  synthid   2.2s  STA1 z=10.77  SynthID z=8.14  (baseline STA1=1.06, SynthID=-0.83)
+[ 8/30] sta1   2.6s  synthid   2.2s  STA1 z=13.36  SynthID z=7.96  (baseline STA1=0.24, SynthID=-0.22)
+[ 9/30] sta1   2.6s  synthid   2.2s  STA1 z=13.26  SynthID z=7.95  (baseline STA1=-0.30, SynthID=-0.26)
+[10/30] sta1   2.6s  synthid   2.2s  STA1 z=13.08  SynthID z=7.87  (baseline STA1=-1.21, SynthID=-0.08)
+[11/30] sta1   2.8s  synthid   2.2s  STA1 z=13.54  SynthID z=7.46  (baseline STA1=-0.14, SynthID=0.34)
+[12/30] sta1   2.6s  synthid   1.1s  STA1 z=12.97  SynthID z=6.75  (baseline STA1=1.06, SynthID=-0.55)
+[13/30] sta1   2.6s  synthid   2.2s  STA1 z=13.96  SynthID z=7.44  (baseline STA1=-1.27, SynthID=-0.85)
+[14/30] sta1   2.6s  synthid   2.2s  STA1 z=13.11  SynthID z=8.01  (baseline STA1=-1.63, SynthID=0.10)
+[15/30] sta1   0.3s  synthid   2.2s  STA1 z=4.91  SynthID z=8.46  (baseline STA1=0.78, SynthID=0.12)
+[16/30] sta1   2.7s  synthid   2.2s  STA1 z=12.51  SynthID z=8.31  (baseline STA1=1.06, SynthID=1.00)
+[17/30] sta1   2.7s  synthid   1.7s  STA1 z=13.32  SynthID z=7.01  (baseline STA1=1.63, SynthID=0.19)
+[18/30] sta1   2.6s  synthid   2.2s  STA1 z=12.65  SynthID z=7.59  (baseline STA1=-1.21, SynthID=0.29)
+[19/30] sta1   0.4s  synthid   2.2s  STA1 z=6.11  SynthID z=7.96  (baseline STA1=-0.92, SynthID=0.14)
+[20/30] sta1   2.6s  synthid   2.2s  STA1 z=13.40  SynthID z=7.57  (baseline STA1=-0.35, SynthID=0.40)
+[21/30] sta1   0.4s  synthid   2.3s  STA1 z=6.41  SynthID z=8.19  (baseline STA1=1.15, SynthID=0.12)
+[22/30] sta1   2.6s  synthid   2.3s  STA1 z=13.96  SynthID z=8.18  (baseline STA1=-0.14, SynthID=-0.48)
+[23/30] sta1   0.0s  synthid   2.3s  STA1 z=1.41  SynthID z=8.56  (baseline STA1=0.64, SynthID=-0.51)
+[24/30] sta1   2.7s  synthid   2.4s  STA1 z=12.69  SynthID z=7.84  (baseline STA1=1.14, SynthID=-1.52)
+[25/30] sta1   2.6s  synthid   2.3s  STA1 z=13.08  SynthID z=8.12  (baseline STA1=-1.35, SynthID=-0.36)
+[26/30] sta1   2.6s  synthid   2.3s  STA1 z=13.64  SynthID z=8.43  (baseline STA1=-1.91, SynthID=-0.23)
+[27/30] sta1   2.3s  synthid   2.2s  STA1 z=12.60  SynthID z=7.62  (baseline STA1=-0.50, SynthID=0.47)
+[28/30] sta1   2.6s  synthid   2.3s  STA1 z=13.01  SynthID z=7.47  (baseline STA1=-2.76, SynthID=-0.37)
+[29/30] sta1   1.7s  synthid   2.3s  STA1 z=11.33  SynthID z=7.90  (baseline STA1=1.91, SynthID=-0.04)
+[30/30] sta1   2.7s  synthid   2.1s  STA1 z=12.08  SynthID z=7.73  (baseline STA1=-0.78, SynthID=-0.28)
+GPT-2: total time 190.3s
+
+=== Llama-3.2-1B (unsloth/Llama-3.2-1B) — vocab=128256, device=mps ===
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[ 1/30] sta1  16.5s  synthid  15.4s  STA1 z=13.11  SynthID z=8.84  (baseline STA1=0.09, SynthID=0.12)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 2/30] sta1  16.4s  synthid  15.6s  STA1 z=13.68  SynthID z=7.65  (baseline STA1=0.64, SynthID=-0.59)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 3/30] sta1  16.9s  synthid  16.0s  STA1 z=12.41  SynthID z=8.24  (baseline STA1=-0.92, SynthID=-0.23)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 4/30] sta1  16.7s  synthid  15.7s  STA1 z=13.26  SynthID z=7.93  (baseline STA1=0.92, SynthID=0.37)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 5/30] sta1  16.6s  synthid  15.6s  STA1 z=12.97  SynthID z=7.61  (baseline STA1=1.91, SynthID=0.11)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 6/30] sta1  16.8s  synthid  15.7s  STA1 z=13.82  SynthID z=8.43  (baseline STA1=-0.57, SynthID=0.33)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 7/30] sta1  16.9s  synthid  16.7s  STA1 z=13.54  SynthID z=7.98  (baseline STA1=1.21, SynthID=-0.03)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 8/30] sta1  16.5s  synthid  15.6s  STA1 z=13.11  SynthID z=8.20  (baseline STA1=-0.07, SynthID=-0.07)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[ 9/30] sta1  16.8s  synthid  16.1s  STA1 z=13.40  SynthID z=7.76  (baseline STA1=-0.07, SynthID=0.65)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[10/30] sta1   1.2s  synthid  16.5s  STA1 z=1.09  SynthID z=7.93  (baseline STA1=-0.31, SynthID=1.44)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[11/30] sta1  16.4s  synthid  15.6s  STA1 z=13.54  SynthID z=8.33  (baseline STA1=0.07, SynthID=0.19)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[12/30] sta1  16.3s  synthid  15.4s  STA1 z=12.55  SynthID z=7.79  (baseline STA1=-0.94, SynthID=0.02)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[13/30] sta1  16.5s  synthid  15.5s  STA1 z=12.41  SynthID z=7.79  (baseline STA1=-0.07, SynthID=0.16)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[14/30] sta1  16.4s  synthid  15.3s  STA1 z=12.41  SynthID z=8.42  (baseline STA1=0.78, SynthID=-0.65)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[15/30] sta1  16.8s  synthid  15.8s  STA1 z=12.97  SynthID z=8.13  (baseline STA1=-1.35, SynthID=-0.59)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[16/30] sta1  16.4s  synthid  15.5s  STA1 z=13.96  SynthID z=8.01  (baseline STA1=1.91, SynthID=0.23)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[17/30] sta1  16.5s  synthid  15.6s  STA1 z=13.40  SynthID z=7.99  (baseline STA1=-0.21, SynthID=-0.26)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[18/30] sta1  16.3s  synthid  15.4s  STA1 z=13.11  SynthID z=8.51  (baseline STA1=-0.43, SynthID=0.08)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[19/30] sta1   9.6s  synthid  15.4s  STA1 z=11.19  SynthID z=8.01  (baseline STA1=0.07, SynthID=0.13)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[20/30] sta1  16.6s  synthid  15.6s  STA1 z=13.11  SynthID z=8.46  (baseline STA1=0.78, SynthID=-0.94)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[21/30] sta1  16.4s  synthid  15.5s  STA1 z=12.73  SynthID z=7.68  (baseline STA1=-0.78, SynthID=-0.38)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[22/30] sta1  16.4s  synthid  15.5s  STA1 z=13.11  SynthID z=7.85  (baseline STA1=-1.49, SynthID=-0.01)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[23/30] sta1  16.9s  synthid  15.8s  STA1 z=13.26  SynthID z=8.22  (baseline STA1=0.78, SynthID=-0.32)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[24/30] sta1  16.7s  synthid  15.6s  STA1 z=13.08  SynthID z=8.86  (baseline STA1=-0.21, SynthID=0.46)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[25/30] sta1  16.4s  synthid  15.4s  STA1 z=13.82  SynthID z=7.81  (baseline STA1=1.34, SynthID=0.40)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[26/30] sta1  16.5s  synthid  15.5s  STA1 z=13.54  SynthID z=7.96  (baseline STA1=-0.64, SynthID=-0.57)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[27/30] sta1  16.4s  synthid   9.6s  STA1 z=13.36  SynthID z=7.42  (baseline STA1=0.42, SynthID=-0.75)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[28/30] sta1  16.6s  synthid  15.7s  STA1 z=13.68  SynthID z=7.92  (baseline STA1=-1.35, SynthID=-0.26)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[29/30] sta1  16.7s  synthid  15.8s  STA1 z=13.68  SynthID z=8.39  (baseline STA1=-1.49, SynthID=-0.17)
+[transformers] Both `max_new_tokens` (=200) and `max_length`(=131072) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[30/30] sta1  16.6s  synthid  15.5s  STA1 z=13.54  SynthID z=8.00  (baseline STA1=0.50, SynthID=-0.58)
+Llama-3.2-1B: total time 1146.6s
+
+=== Qwen2.5-1.5B (Qwen/Qwen2.5-1.5B) — vocab=151936, device=mps ===
+[ 1/30] sta1  20.8s  synthid   5.3s  STA1 z=12.69  SynthID z=4.56  (baseline STA1=-0.75, SynthID=0.43)
+[ 2/30] sta1  21.7s  synthid  20.3s  STA1 z=9.85  SynthID z=7.60  (baseline STA1=-0.35, SynthID=-0.35)
+[ 3/30] sta1  21.1s  synthid  20.1s  STA1 z=12.69  SynthID z=7.89  (baseline STA1=0.35, SynthID=-0.11)
+[ 4/30] sta1  20.9s  synthid  19.8s  STA1 z=13.26  SynthID z=8.55  (baseline STA1=-0.92, SynthID=0.84)
+[ 5/30] sta1   8.7s  synthid  19.5s  STA1 z=9.76  SynthID z=7.50  (baseline STA1=0.35, SynthID=0.27)
+[ 6/30] sta1  21.2s  synthid  20.0s  STA1 z=12.26  SynthID z=7.96  (baseline STA1=-1.00, SynthID=-0.66)
+[ 7/30] sta1  21.3s  synthid  15.5s  STA1 z=13.08  SynthID z=7.08  (baseline STA1=0.38, SynthID=-0.62)
+[ 8/30] sta1  21.1s  synthid  21.5s  STA1 z=13.68  SynthID z=7.98  (baseline STA1=-0.64, SynthID=-0.02)
+[ 9/30] sta1  23.1s  synthid  21.3s  STA1 z=13.11  SynthID z=7.74  (baseline STA1=-0.78, SynthID=0.24)
+[10/30] sta1  21.5s  synthid   3.6s  STA1 z=9.66  SynthID z=3.84  (baseline STA1=-2.06, SynthID=0.43)
+[11/30] sta1  20.2s  synthid  19.7s  STA1 z=12.31  SynthID z=7.93  (baseline STA1=-1.06, SynthID=0.13)
+[12/30] sta1  24.5s  synthid  20.1s  STA1 z=13.26  SynthID z=7.66  (baseline STA1=2.20, SynthID=-0.83)
+[13/30] sta1  20.9s  synthid  19.5s  STA1 z=13.26  SynthID z=8.20  (baseline STA1=-1.63, SynthID=0.15)
+[14/30] sta1  20.4s  synthid  19.3s  STA1 z=13.26  SynthID z=7.31  (baseline STA1=-2.06, SynthID=-0.09)
+[15/30] sta1  20.9s  synthid  19.8s  STA1 z=12.97  SynthID z=7.99  (baseline STA1=-1.06, SynthID=-0.39)
+[16/30] sta1  17.9s  synthid  20.2s  STA1 z=10.99  SynthID z=7.48  (baseline STA1=-0.92, SynthID=-1.08)
+[17/30] sta1  21.2s  synthid  19.8s  STA1 z=13.40  SynthID z=6.39  (baseline STA1=0.91, SynthID=-0.77)
+[18/30] sta1  20.7s  synthid  19.5s  STA1 z=12.69  SynthID z=7.46  (baseline STA1=-2.06, SynthID=-0.78)
+[19/30] sta1  20.7s  synthid  19.4s  STA1 z=12.69  SynthID z=8.58  (baseline STA1=1.77, SynthID=-0.74)
+[20/30] sta1  20.7s  synthid  19.5s  STA1 z=12.69  SynthID z=8.16  (baseline STA1=0.07, SynthID=-0.42)
+[21/30] sta1  20.4s  synthid  19.3s  STA1 z=12.69  SynthID z=7.57  (baseline STA1=-1.06, SynthID=-0.87)
+[22/30] sta1  20.4s  synthid  19.3s  STA1 z=13.40  SynthID z=7.74  (baseline STA1=1.56, SynthID=-0.40)
+[23/30] sta1  20.8s  synthid  19.7s  STA1 z=13.82  SynthID z=7.87  (baseline STA1=1.35, SynthID=0.64)
+[24/30] sta1   7.8s  synthid  11.0s  STA1 z=9.50  SynthID z=6.97  (baseline STA1=0.07, SynthID=0.26)
+[25/30] sta1  16.0s  synthid  19.4s  STA1 z=12.30  SynthID z=7.70  (baseline STA1=-0.64, SynthID=0.45)
+[26/30] sta1   1.7s  synthid  19.4s  STA1 z=3.67  SynthID z=7.74  (baseline STA1=-1.91, SynthID=0.33)
+[27/30] sta1  20.9s  synthid  19.6s  STA1 z=11.20  SynthID z=7.56  (baseline STA1=-0.07, SynthID=0.15)
+[28/30] sta1  20.9s  synthid   2.8s  STA1 z=12.45  SynthID z=3.80  (baseline STA1=-1.06, SynthID=0.04)
+[29/30] sta1  15.4s  synthid  19.6s  STA1 z=11.43  SynthID z=7.52  (baseline STA1=-1.53, SynthID=-0.46)
+[30/30] sta1  20.7s  synthid  19.4s  STA1 z=11.84  SynthID z=7.89  (baseline STA1=1.35, SynthID=-0.36)
+Qwen2.5-1.5B: total time 1395.0s
+
+=== SUMMARY ===
+{
+  "n_samples": 30,
+  "max_new_tokens": 200,
+  "temperature": 1.0,
+  "threshold": 4.0,
+  "device": "mps",
+  "models": {
+    "GPT-2": {
+      "hub_id": "gpt2",
+      "params": "124M",
+      "vocab_size": 50257,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 0.9978,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 11.686548190807127,
+        "min_z_watermarked": 1.414213562373095,
+        "mean_z_unwatermarked": -0.2612599327719987,
+        "max_z_unwatermarked": 1.9139792535225069,
+        "mean_gen_seconds": 2.2708837270736693,
+        "mean_tokens": 167.03333333333333
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 1.0,
+          "fpr": 0.0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0,
+          "tp": 30,
+          "fp": 0,
+          "tn": 30,
+          "fn": 0,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 7.913367869644206,
+        "min_z_watermarked": 6.754430843248272,
+        "mean_z_unwatermarked": -0.06179611661423103,
+        "max_z_unwatermarked": 1.0037670005825203,
+        "mean_gen_seconds": 2.193936546643575,
+        "mean_tokens": 195.76666666666668
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.1583845267474242,
+        "synthid_detector_on_sta1_text_mean_z": 0.03541193084829722
+      }
+    },
+    "Llama-3.2-1B": {
+      "hub_id": "unsloth/Llama-3.2-1B",
+      "params": "1.24B",
+      "vocab_size": 128256,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 0.9956,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 12.761664966604004,
+        "min_z_watermarked": 1.091089451179962,
+        "mean_z_unwatermarked": 0.017481771256541784,
+        "max_z_unwatermarked": 1.9139792535225069,
+        "mean_gen_seconds": 15.830446990331014,
+        "mean_tokens": 191.96666666666667
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 1.0,
+          "fpr": 0.0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0,
+          "tp": 30,
+          "fp": 0,
+          "tn": 30,
+          "fn": 0,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 8.069710294528837,
+        "min_z_watermarked": 7.4186014250508,
+        "mean_z_unwatermarked": -0.057978870225787536,
+        "max_z_unwatermarked": 1.4395031092573418,
+        "mean_gen_seconds": 15.461468688646953,
+        "mean_tokens": 197.6
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.1131027003437885,
+        "synthid_detector_on_sta1_text_mean_z": -0.06364695867335877
+      }
+    },
+    "Qwen2.5-1.5B": {
+      "hub_id": "Qwen/Qwen2.5-1.5B",
+      "params": "1.54B",
+      "vocab_size": 151936,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 1.0,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 11.994890288181095,
+        "min_z_watermarked": 3.6742346141747673,
+        "mean_z_unwatermarked": -0.3730875866235985,
+        "max_z_unwatermarked": 2.1975317355258412,
+        "mean_gen_seconds": 19.13795578479767,
+        "mean_tokens": 184.43333333333334
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 0.9333,
+          "fpr": 0.0,
+          "accuracy": 0.9667,
+          "precision": 1.0,
+          "f1": 0.9655,
+          "auc_roc": 1.0,
+          "tp": 28,
+          "fp": 0,
+          "tn": 30,
+          "fn": 2,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 7.3412927583820045,
+        "min_z_watermarked": 3.7954023969939072,
+        "mean_z_unwatermarked": -0.15349140820167056,
+        "max_z_unwatermarked": 0.8399800286119747,
+        "mean_gen_seconds": 17.775994865099587,
+        "mean_tokens": 182.53333333333333
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.18618235703523725,
+        "synthid_detector_on_sta1_text_mean_z": -0.1550864661943034
+      }
+    }
+  }
+}
+       Model    Algorithm    TPR  FPR  Accuracy     F1  AUC-ROC
+       GPT-2        STA-1 0.9667  0.0    0.9833 0.9831   0.9978
+       GPT-2 SynthID-Text 1.0000  0.0    1.0000 1.0000   1.0000
+Llama-3.2-1B        STA-1 0.9667  0.0    0.9833 0.9831   0.9956
+Llama-3.2-1B SynthID-Text 1.0000  0.0    1.0000 1.0000   1.0000
+Qwen2.5-1.5B        STA-1 0.9667  0.0    0.9833 0.9831   1.0000
+Qwen2.5-1.5B SynthID-Text 0.9333  0.0    0.9667 0.9655   1.0000
+
+Done. Figures in report/figures/, data in report/results/.

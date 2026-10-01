@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────
+#  LLM Watermarking — Configuration
+# ─────────────────────────────────────────────────────────
+
+# Models to compare
+# Model names can be any HuggingFace model id, or a short alias
+# listed in src/models/model_loader.py (SUPPORTED_MODELS dict).
+models:
+  model1:
+    name: "gpt2"               # GPT-2 Small  (124 M) — no auth required
+    display_name: "GPT-2"
+    description: "OpenAI GPT-2 small – quick baseline, CPU-friendly"
+  model2:
+    name: "facebook/opt-1.3b"  # OPT-1.3 B — no auth required
+    display_name: "OPT-1.3B"
+    description: "Meta OPT 1.3 B – different decoder architecture"
+
+  # ── Alternatives (uncomment as needed) ──────────────────
+  # tinyllama:
+  #   name: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  #   display_name: "TinyLlama-1.1B"
+  # phi2:
+  #   name: "microsoft/phi-2"
+  #   display_name: "Phi-2 (2.7B)"
+  # mistral:
+  #   name: "mistralai/Mistral-7B-v0.1"
+  #   display_name: "Mistral-7B"
+
+# ── Watermarking hyper-parameters ───────────────────────
+watermarking:
+  sta1:
+    seed: 42          # Global RNG seed for green-list partitioning
+    gamma: 0.5        # Fraction of vocab assigned to the green list  [0, 1]
+    delta: 2.0        # Logit bias added to green-list tokens
+
+  synthid:
+    keys: [2024, 42, 1234, 5678]   # One key per hash depth level
+    depth: 4          # Number of context tokens used in the hash (= len(keys))
+    n_candidates: 5   # Tournament sample size: pick best of N candidates
+
+# ── Text generation ─────────────────────────────────────
+generation:
+  max_new_tokens: 200   # Max tokens appended to each prompt
+  temperature: 1.0      # Sampling temperature (1.0 = unmodified distribution)
+  num_samples: 50       # Number of (prompt, generated-text) pairs per run
+
+# ── Detection thresholds ────────────────────────────────
+detection:
+  sta1:
+    z_threshold: 4.0    # One-sided z-test threshold (≈ FPR < 3e-5)
+  synthid:
+    z_threshold: 4.0    # Same scale: z-score of normalised mean g-value
+
+# ── Evaluation / output ─────────────────────────────────
+evaluation:
+  output_dir: "results"
+  save_generated_texts: true
+  plot_results: true
+  prompts_file: "data/prompts.txt"

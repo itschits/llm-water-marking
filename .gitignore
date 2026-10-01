@@ -1,0 +1,3 @@
+report/*.docx
+report/build_docx.py
+.idea/

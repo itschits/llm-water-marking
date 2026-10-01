@@ -1,0 +1,174 @@
+{
+  "n_samples": 30,
+  "max_new_tokens": 200,
+  "temperature": 1.0,
+  "threshold": 4.0,
+  "device": "mps",
+  "models": {
+    "GPT-2": {
+      "hub_id": "gpt2",
+      "params": "124M",
+      "vocab_size": 50257,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 0.9978,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 11.686548190807127,
+        "min_z_watermarked": 1.414213562373095,
+        "mean_z_unwatermarked": -0.2612599327719987,
+        "max_z_unwatermarked": 1.9139792535225069,
+        "mean_gen_seconds": 2.2708837270736693,
+        "mean_tokens": 167.03333333333333
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 1.0,
+          "fpr": 0.0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0,
+          "tp": 30,
+          "fp": 0,
+          "tn": 30,
+          "fn": 0,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 7.913367869644206,
+        "min_z_watermarked": 6.754430843248272,
+        "mean_z_unwatermarked": -0.06179611661423103,
+        "max_z_unwatermarked": 1.0037670005825203,
+        "mean_gen_seconds": 2.193936546643575,
+        "mean_tokens": 195.76666666666668
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.1583845267474242,
+        "synthid_detector_on_sta1_text_mean_z": 0.03541193084829722
+      }
+    },
+    "Llama-3.2-1B": {
+      "hub_id": "meta-llama/Llama-3.2-1B",
+      "params": "1.24B",
+      "vocab_size": 128256,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 0.9956,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 12.761664966604004,
+        "min_z_watermarked": 1.091089451179962,
+        "mean_z_unwatermarked": 0.017481771256541784,
+        "max_z_unwatermarked": 1.9139792535225069,
+        "mean_gen_seconds": 15.944355161984761,
+        "mean_tokens": 191.96666666666667
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 1.0,
+          "fpr": 0.0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "f1": 1.0,
+          "auc_roc": 1.0,
+          "tp": 30,
+          "fp": 0,
+          "tn": 30,
+          "fn": 0,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 8.069710294528837,
+        "min_z_watermarked": 7.4186014250508,
+        "mean_z_unwatermarked": -0.057978870225787536,
+        "max_z_unwatermarked": 1.4395031092573418,
+        "mean_gen_seconds": 15.574012931187948,
+        "mean_tokens": 197.6
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.1131027003437885,
+        "synthid_detector_on_sta1_text_mean_z": -0.06364695867335877
+      }
+    },
+    "Qwen2.5-1.5B": {
+      "hub_id": "Qwen/Qwen2.5-1.5B",
+      "params": "1.54B",
+      "vocab_size": 151936,
+      "sta1": {
+        "metrics": {
+          "tpr": 0.9667,
+          "fpr": 0.0,
+          "accuracy": 0.9833,
+          "precision": 1.0,
+          "f1": 0.9831,
+          "auc_roc": 1.0,
+          "tp": 29,
+          "fp": 0,
+          "tn": 30,
+          "fn": 1,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 11.994890288181095,
+        "min_z_watermarked": 3.6742346141747673,
+        "mean_z_unwatermarked": -0.3730875866235985,
+        "max_z_unwatermarked": 2.1975317355258412,
+        "mean_gen_seconds": 19.13795578479767,
+        "mean_tokens": 184.43333333333334
+      },
+      "synthid": {
+        "metrics": {
+          "tpr": 0.9333,
+          "fpr": 0.0,
+          "accuracy": 0.9667,
+          "precision": 1.0,
+          "f1": 0.9655,
+          "auc_roc": 1.0,
+          "tp": 28,
+          "fp": 0,
+          "tn": 30,
+          "fn": 2,
+          "n_watermarked": 30,
+          "n_unwatermarked": 30,
+          "threshold": 4.0
+        },
+        "mean_z_watermarked": 7.3412927583820045,
+        "min_z_watermarked": 3.7954023969939072,
+        "mean_z_unwatermarked": -0.15349140820167056,
+        "max_z_unwatermarked": 0.8399800286119747,
+        "mean_gen_seconds": 17.775994865099587,
+        "mean_tokens": 182.53333333333333
+      },
+      "cross_check": {
+        "sta1_detector_on_synthid_text_mean_z": 0.18618235703523725,
+        "synthid_detector_on_sta1_text_mean_z": -0.1550864661943034
+      }
+    }
+  }
+}
